@@ -1,0 +1,28 @@
+.product-component{
+    text-align: left;
+    margin: 10px;
+    padding: 20px;
+    border-bottom: 1px solid grey;
+    display: flex;
+    align-items: center;
+}
+.title{
+    color:blue;
+    font-size: 15px;
+}
+.img{
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+    padding: 20px;
+}
+.btn-addCart{
+    background-color: goldenrod;
+    border: 1px solid goldenrod;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.ico-cart{
+    padding-right: 5px;
+}

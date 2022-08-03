@@ -1,0 +1,30 @@
+
+.header{
+    text-align: center;
+
+}
+.logo{
+    background-color: black;
+    border-radius: 5px;
+    height: 80px;
+    width: 300px;   
+}
+
+.nav-bar{
+    background-color: black;
+    line-height: 50px;
+    font-size: 20px;
+    text-align: left;
+
+}
+.nav-bar a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    margin-right: 5px;
+}
+.nav-bar a:hover{
+    background-color: grey;
+    padding: 10px;
+    border-radius: 5px;
+}

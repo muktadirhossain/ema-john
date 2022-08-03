@@ -1,0 +1,12 @@
+.shop{
+    display: flex;
+    flex-direction: row;
+}
+.shop-area{
+    padding-left: 45px;
+    flex: 2;
+    border-right: 1px solid grey;
+}
+.cart-area{
+    flex: 1;
+}
