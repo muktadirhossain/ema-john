@@ -3,6 +3,7 @@ import "./Shop.css";
 import fakeData from "../../fakeData/products.json";
 import Product from "../products/Product";
 import Cart from "../Cart/Cart";
+import { addToDb } from "../../utilities/fakedb";
 
 function Shop() {
   const first10 = fakeData.slice(0, 10);
@@ -11,15 +12,15 @@ function Shop() {
 
   // Button Click Handler
   const handelClick = (product) => {
-    let cartNew = [...cart, product];
-    setCart(cartNew);
+    setCart([...cart, product]);
+    addToDb(product.id)
   };
 
   return (
     <div className="shop">
       <div className="shop-area">
         {products.map((pd) => (
-          <Product key={pd.id} handelClick={handelClick} product={pd}></Product>
+          <Product key={pd.id} handelClick={handelClick} product={pd} addToCartBtn={true}></Product>
         ))}
       </div>
 
