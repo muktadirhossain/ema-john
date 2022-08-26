@@ -24,7 +24,7 @@ function Product(props) {
                 <Link to={`/product/${id}`}>{name}</Link>
             </h2>
             <p>Price : ${price}</p>
-            <p><small>By : {seller}</small></p>
+            <p><small>Sold By : {seller}</small></p>
             <p><small>Buy Now only {stock} left in our stock</small></p>
             
             {
